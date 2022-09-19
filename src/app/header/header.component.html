@@ -11,3 +11,15 @@
     </div>
         <button [disabled]="isdisabled"(click)="onbtn()">click</button>
     </div>
+
+    <!-- ------------------------------color--------------------------------------- -->
+    <p (click)="isActive=!isActive" [ngClass]="isActive?'isActive':'inActive'">this contains directives</p>
+    
+    <!-- ------------------------------ngIf---------------------------------------- -->
+    <!-- <p *ngIf ="!isActive;else elseblock">this is a activepage</p>
+    <ng-template #elseblock>refere </ng-template>
+     -->
+
+     <p *ngIf ="isActive">print if true</p>
+     <p *ngIf ="!isActive">if false</p>
+     <!-- ---------------------------------------------------------------------------- -->

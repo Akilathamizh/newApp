@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   twoway:any;
 isdisabled:boolean=true;
+isActive:boolean=true;
   
 
   constructor() { }
