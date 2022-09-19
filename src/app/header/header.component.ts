@@ -9,7 +9,8 @@ export class HeaderComponent implements OnInit {
   twoway:any;
 isdisabled:boolean=true;
 isActive:boolean=true;
-  
+planets=['earth','mars'];
+// fruits=[{fruitId:1,fruitName:'apple'},{fruitId:2,fruitName:'Orange'}]
 
   constructor() { }
 
