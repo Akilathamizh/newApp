@@ -8,13 +8,15 @@ import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { UserlistComponent } from './userlist/userlist.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BindingComponent,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule,
