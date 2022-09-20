@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BindingComponent
+    BindingComponent,
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,

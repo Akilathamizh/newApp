@@ -26,9 +26,9 @@
      <!-- <p *ngIf ="isActive">print if true</p> -->
 
      <!-- -------------------------....ngFor....--------------------------------------------------- -->
-<ul>
+<!-- <ul>
     <li *ngFor = "let planet of planets">{{planet}}</li>
-</ul>
+</ul> -->
 <!-- --------------------without for --------------------------------------------- -->
 <!-- <ul>
     <li>{{planets}}</li>
@@ -39,7 +39,17 @@
     <li>earth</li>
 </ul> -->
 <!-- <ul>
-    <li *ngFor=" let fruits for fruit">{{fruits}}</li>
-</ul> -->
-<!-- ------------------------------------------------------------------------ -->
-
+    <li *ngFor="let fruit for fruits">{{fruit}}</li>
+</ul>  -->
+<ul>
+    <li *ngFor="let planet of planets;index as i,first as isFirst,last as isLast,even as isEven,odd as isOdd">{{i+1}} {{isFirst}} {{isLast}} {{isEven}} {{isOdd}} {{planet.planetName}}
+         <!-- <span [ngClass]="isFirst?'isActive':''"> sample </span> -->
+    </li>
+    <!-- <div>
+        <p>Templename</p>
+        <li>Bhradeeswara Temple</li>
+        <li>kalishwara Temple</li>
+    </div>  
+    <div>
+        <button [disabled]="isdisabled"></button>
+    </div> -->

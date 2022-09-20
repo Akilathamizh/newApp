@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  userDetails = {userId:1,userName:'New User'}
   title = 'newApp';
+  // users= ['userr 1','user 2'];
+  // title = 'newApp';
 }
